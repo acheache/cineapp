@@ -1,7 +1,7 @@
 # project cineapp
 
 
-Paso para correr el aplicativo:
+Pasos para correr el aplicativo:
 
 
 1.-Ejecutar los siguentes comandos para levantar Postgresql:
