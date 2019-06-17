@@ -16,7 +16,7 @@ git clone https://github.com/acheache/cineapp.git
 
 mvn spring-boot:run
 
-3.-Entrar a la siguiente url para ver la documentacion
+Entrar a la siguiente url para ver la documentacion:
 
 localhost:8080/swagger-ui.html
 
