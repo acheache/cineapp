@@ -20,4 +20,4 @@ mvn spring-boot:run
 
 localhost:8080/swagger-ui.html
 
-![alt tag](https://github.com/acheache/cineapp/blob/master/documentacion.JPG)
+![alt tag](https://github.com/acheache/cineapp/blob/master/documentación.JPG)
