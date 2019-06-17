@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -31,7 +32,7 @@ public class Pelicula {
 	@Temporal(TemporalType.DATE)
 	private Date fechaPublicacion;
 	private String estado;
-	@OneToOne
+	@OneToMany
 	@JoinColumn(name = "id_turno", nullable = false, foreignKey = @ForeignKey(name = "fk_pelicula_turno"))
 	private Turno turno;
 
