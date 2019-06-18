@@ -24,7 +24,7 @@ public class Pelicula {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String idPelicula;
+	private Integer idPelicula;
 	@ApiModelProperty(notes = "Nombres debe tener minimo 3 caracteres")
 	@Size(min = 3, message = "[nombre] Minimo 3 caracteres")
 	@Column(name = "nombre", length = 100)
@@ -32,8 +32,8 @@ public class Pelicula {
 	@Temporal(TemporalType.DATE)
 	private Date fechaPublicacion;
 	private String estado;
-	@OneToMany
-	@JoinColumn(name = "id_turno", nullable = false, foreignKey = @ForeignKey(name = "fk_pelicula_turno"))
+	@OneToOne(cascade= {CascadeType.ALL})
+	@JoinColumn(name = "id_turno")
 	private Turno turno;
 
 	public String getIdPelicula() {
