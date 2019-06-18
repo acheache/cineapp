@@ -36,11 +36,11 @@ public class Pelicula {
 	@JoinColumn(name = "id_turno")
 	private Turno turno;
 
-	public String getIdPelicula() {
+	public Integer getIdPelicula() {
 		return idPelicula;
 	}
 
-	public void setIdPelicula(String idPelicula) {
+	public void setIdPelicula(Integer idPelicula) {
 		this.idPelicula = idPelicula;
 	}
 
