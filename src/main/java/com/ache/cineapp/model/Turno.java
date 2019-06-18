@@ -16,16 +16,16 @@ public class Turno {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String idTurno;
+	private Integer idTurno;
 	@Temporal(TemporalType.TIME)
 	private Date turno;
 	private String estado;
 
-	public String getIdTurno() {
+	public Integer getIdTurno() {
 		return idTurno;
 	}
 
-	public void setIdTurno(String idTurno) {
+	public void setIdTurno(Integer idTurno) {
 		this.idTurno = idTurno;
 	}
 
